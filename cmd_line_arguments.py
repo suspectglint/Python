@@ -10,5 +10,6 @@ parser.add_argument("input2",type=str, help = 'Please enter an integer number :)
 args = parser.parse_args()
 print(args,type(args))
 
+#args - represents an object of Namespace class present in argparse module.
 print(args.input1,type(args.input1))
 print(args.input2,type(args.input2))
