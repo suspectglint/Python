@@ -16,4 +16,5 @@ print("The radius of circle is :",args.radius)
 
 area = math.pi * args.radius**2
 
-print("The radius of circle is :",area)
+print("The area of circle is :",area)
+print("The ared of circle is : {:.2f}".format(area))
