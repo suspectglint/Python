@@ -14,3 +14,19 @@ print(type(range(10)))
 #Incorrect - range() function only accepts int as an argument. no other types are allowed.
 """charset = range(1.0,2.5,0.5)
 print(charset)"""
+
+### Print the triangle star pattern using for loop
+"""
+       *
+      * *
+     * * *
+    * * * *
+   * * * * *
+  * * * * * *
+ * * * * * * *
+* * * * * * * *
+"""
+n=20
+for i in range(1,11):
+    print(' '*(n-i),end='')
+    print("* "*i)
