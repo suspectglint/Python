@@ -1,5 +1,8 @@
 #Standard Experiment Python File - where I want to test any basic things or random one-off cases.
 
+import array as arr
+import numpy as np
+
 a=[]
 for i in range(5):
     print("Enter a number : ",end='')
@@ -40,3 +43,11 @@ Enter a number :
 #The difference after input() you enter a line-break character(\n - a new line) to mark the end of input.
 #Now if we have end as default, print would also use end as '\n' and we get a new line.
 #But when we use end='', then a new line for marking end of input is only registered.
+
+print(arr.array,type(arr.array))
+print(np.array,type(np.array))
+"""
+Output :-
+<class 'array.array'> <class 'type'>
+<built-in function array> <class 'builtin_function_or_method'>
+"""
