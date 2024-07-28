@@ -1,7 +1,6 @@
 #Standard Experiment Python File - where I want to test any basic things or random one-off cases.
 
 import array as arr
-import numpy as np
 
 """
 a=[]
@@ -58,3 +57,8 @@ a = 15
 b = 20
 c = a if a>b else b # expression1 if condition else expression2
 print(a,b,c)
+
+
+#type of sort() in numpy matrices
+from numpy import *
+print(type(sort)) #class 'numpy._ArrayFunctionDispatcher'
