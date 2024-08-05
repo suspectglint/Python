@@ -3,6 +3,8 @@
 import sys
 import argparse
 
+print(f"Using sys.argv, Input arguments are : {sys.argv[1:]}")
+
 parser=argparse.ArgumentParser(description="This program is for inserting a given input string at a given input position.")
 parser.add_argument("str1",type=str,help="Please give string as an input!!!")
 parser.add_argument("str2",type=str,help="Please give string as an input!!!")
