@@ -19,6 +19,12 @@ print(id(str1),id(str2),id(str3),id(str4))
 print(f"Length of {str1} is {len(str1)}")
 print(type(print))
 
+#Indexing
+print(str1[1],str1[2])
+#Slicing - when we want to print the string in reverse, step-size should be negative.
+print(f"Reverse order using slicing - {str1[::-1]}") 
+
+
 #Changing case of strings - upper,lower,casefold,title
 str5="apple"
 str6="BALL"
@@ -58,3 +64,65 @@ print(f"{str11} and {str12}, str1==str2 is {str11==str12}")
 print(f"{str12} and {str13}, str1>str2 is {str12>str13}")
 print(f"{str13} and {str14}, str1==str2 is {str13<str14}")
 print(f"{str14} and {str15}, str1!=str2 is {str14!=str15}")
+
+#Finding a substring in a given string - find(),rfind(),index(),rindex()
+str16="This is insane."
+str17="simba"
+print(f"find() - '{str17}' is found in '{str16}' at '{str16.find(str17)}' position.")
+print(f"rfind() - '{str17}' is found in '{str16}' at '{str16.rfind(str17)}' position.")
+try :
+    print(f"index() - '{str17}' is found in '{str16}' at '{str16.index(str17)}' position.")
+except ValueError:
+    print("Value is not found in string.")
+try :
+    print(f"rindex() - '{str17}' is found in '{str16}' at '{str16.rindex(str17)}' position.")
+except :
+    print("Value is not found in string.")
+
+#Find count of a given string/character in another string
+str18='Betty bought some butter. But the butter was bitter butter.To make bitter butter\
+ better, betty added better butter to bitter butter.'
+str19='butter'
+print(str18.count(str19))
+print(str18.count('Butter'))
+
+#Replace a given string with another value in another string. replace() - this replaces all values.
+str20='Betty bought some butter. But the butter was bitter butter.To make bitter butter\
+ better, betty added better butter to bitter butter.'
+str21='butter'
+print(str20.replace(str21,'cucumber')) #replace() returns a string with replaced values. not in-place
+print(str20)
+
+#Sorting a given string using sort() - 
+#1 - Convert string to list first
+#2 - Then sort list(iterable)
+#3 - Then convert the list back to string
+str22="BOGO - BUY ONE GET ONE ROLES IN SNOWFLAKE"
+print(f"Before sort : {str22}")
+lst=[i for i in str22]
+lst.sort() #inplace sort when is done on a list.
+str23=''.join(lst)
+print(f"After sort  : {str23}")
+
+#Membership check - using in and not in
+str24="rokkam gopi shravan reddy".title()
+str25="Sravan"
+str26="Shravan"
+if str25 in str24:
+    print(f"'in' - {str25} is found in {str24}.")
+else :
+    print(f"'in' - {str25} is not found in {str24}.")
+if str26 not in str24:
+    print(f"'not in' - {str26} is not found in {str24}.")
+else :
+    print(f"'not in' - {str26} is found in {str24}.")
+
+#Starting and Ending methods - startswith() and endswith()
+str27="Tupac Shakur"
+str28="Tupa"
+str29="akur"
+str30="Thakur"
+print(str27.startswith(str28))
+print(str27.endswith(str29))
+print(str27.startswith(str30))
+print(str27.endswith(str30))
