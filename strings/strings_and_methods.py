@@ -126,3 +126,16 @@ print(str27.startswith(str28))
 print(str27.endswith(str29))
 print(str27.startswith(str30))
 print(str27.endswith(str30))
+
+#Removing spaces from strings - strip(),lstrip() and rstrip()
+str31="   This is insane    "
+print(f"Using strip() - {str31.strip()}.")
+print(f"str = {str31}")
+print(f"Using lstrip() - {str31.lstrip()}.")
+print(f"str = {str31}")
+print(f"Using lstrip() - {str31.rstrip()}.")
+print(f"str = {str31}")
+
+#Repitition of string using **
+str32="No man can hurl me down to death against my fate."
+print(str32*108)
