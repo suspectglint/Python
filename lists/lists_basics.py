@@ -29,3 +29,31 @@ print(l1,l5,id(l1),id(l5))
 l7=[1,2,3]
 l8=[4,5,6]
 print(l7+l8)
+
+#Count of a given element in a list.
+t=2
+l9=[1,2,3,4,5,6,7,8,9,10]
+print(l9.count(t))
+print(l9.count(12))
+
+#List Comprehensions - Similar to list comprehensions we also have dictionary comprehensions and tuple comprehensions
+l10=[1,2,3,4,5]
+l11=[6,7,8,9,10]
+l12=[i+j for i in l10 for j in l11]
+print(l10)
+print(l11)
+print(l12)
+
+a='SRAVAN'
+b='REDDY'
+c='ROKKAM'
+d=[e+f+g for e in a for f in b for g in c]
+print(a)
+print(b)
+print(c)
+print(d)
+
+l13=[1,2,43,68,90,21,49]
+l14=[x for x in l13 if x%2==0]
+print(l13)
+print(l14)
