@@ -146,8 +146,8 @@ t=generator_function()
 print(t,type(t),list(t),type(list(t)),type(t),list(t))
 
 #Iterating through a generator
-tnp=next(t)
-print(tnp)
+#tnp=next(t)
+#print(tnp)
 
 #__name__ variable
 if __name__ == "__main__":

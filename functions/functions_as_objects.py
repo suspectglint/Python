@@ -13,7 +13,7 @@ def display1(msg):
 
 #Function passed as a parameter
 def display2(msg):
-    return msg + "How is it going?"
+    return msg() + "How is it going?"
 def fn_as_param():
     return "Hey there litle fella! "
 
@@ -33,7 +33,7 @@ print(type(id),type(print))
 #Various function calls
 print(display('Gopi'))
 print(display1('Gopi'))
-print(display2(fn_as_param()))
+print(display2(fn_as_param))
 fn_as_return_value=display3()
 print(fn_as_return_value())
 #when display3() returns a function and it is directly called
