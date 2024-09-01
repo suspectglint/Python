@@ -53,12 +53,20 @@ Output :-
 """
 
 #FYI - Ternary operator is present in python and it can be used as follows :
-a = 15
+"""a = 15
 b = 20
 c = a if a>b else b # expression1 if condition else expression2
 print(a,b,c)
-
+"""
 
 #type of sort() in numpy matrices
-from numpy import *
-print(type(sort)) #class 'numpy._ArrayFunctionDispatcher'
+"""from numpy import *
+print(type(sort)) #class 'numpy._ArrayFunctionDispatcher'"""
+
+#reversed() - this function returns a reversed iterator of the given iterable.
+l=[1,2,3,4,5,6,7,8,9,10]
+for i in l:
+    print(i,end=' ')
+print('\n')
+for i in reversed(l):
+    print(i,end=' ')
