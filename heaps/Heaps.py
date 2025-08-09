@@ -1,3 +1,6 @@
+"""
+This python file is used to show all the functions present in heapq module with examples.
+"""
 import heapq
 
 #Creation of Heap using heapify() function.
