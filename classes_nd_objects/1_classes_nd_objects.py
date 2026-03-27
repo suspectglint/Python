@@ -13,7 +13,7 @@ class Student(object):
     def talk(self):
         print(f"Hi All, My Name is '{self.name}'")
         print(f"Hi All, My Marks are '{self.marks}'")
-        print(f"Total Student Count is {self.StudentCount}")
+        print(f"Total Student Count is {Student.StudentCount}")
 
 s1=Student()
 s2=Student('Sravan Reddy Rokkam',96)
