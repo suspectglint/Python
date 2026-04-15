@@ -12,8 +12,8 @@ class Book:
     def __str__(self):
         return f"{self.title} written by {self.author} in {self.year} costs {self.price} dollars."
     
-    #This magice methos is mostly for developers if they want to print any specific details about the object.
-    #If the method is not defined, we generally id of the object in hex format.
+    #This magic method is mostly for developers if they want to print any specific details about the object.
+    #If the method is not defined, we generally get id of the object in hex format.
     def __repr__(self):
         return self.__dict__
     
@@ -36,7 +36,7 @@ class Book:
         else:
             return False
         
-    #This method is used for comparions operator greater than('>')
+    #This method is used for comparisons operator greater than('>')
     def __gt__(self, other):
         if self.price>other.price:
             return True
